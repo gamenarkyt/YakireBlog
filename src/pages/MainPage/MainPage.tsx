@@ -48,6 +48,7 @@ const MainPage = () => {
 
   return (
     <div className={styles.mainpage}>
+      <span>start refactoring</span>
       {/* Main News Card */}
       <div className={styles.mainnews}>
         <BigCard image="/assets/test.png">
