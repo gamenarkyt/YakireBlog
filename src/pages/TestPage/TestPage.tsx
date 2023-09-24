@@ -1,3 +1,4 @@
+import { MainPostsPreview } from "../../business-component/MainPosts/MainPosts.preview";
 import { BigCard } from "../../components/ui/BigCard/BigCard";
 import { Button } from "../../components/ui/Button/Button";
 import { Card } from "../../components/ui/Card/Card";
@@ -6,6 +7,8 @@ import styles from "./TestPage.module.scss";
 const TestPage = () => {
   return (
     <div className={styles.testpage}>
+      <div className={styles.testanim}>card</div>
+      <MainPostsPreview />
       <span>Test markdown library and assets file loader for blog posts:</span>
       <span>Button:</span>
       <Button width="100px" onClick={() => alert(1)}>

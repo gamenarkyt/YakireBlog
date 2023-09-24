@@ -25,11 +25,22 @@ body {
     rgba(0, 0, 0, 0.115) 0px 15px 12px;
 
   --padding: 4px;
+
+  --skeleton: skeleton-loading 1s linear infinite alternate;
 }
 
 ::selection {
   color: white;
   background-color: var(--accent-05);
+}
+
+@keyframes skeleton-loading {
+  0% {
+    background: var(--background-1);
+  }
+  100% {
+    background: var(--background-2);
+  }
 }
 
 html,

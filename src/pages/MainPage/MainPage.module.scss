@@ -4,47 +4,4 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
-
-  .mainnews {
-    width: 100%;
-    height: 200px;
-  }
-
-  .posts {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    flex-wrap: wrap;
-    gap: 10px;
-  }
-
-  .soon {
-    width: 300px;
-    aspect-ratio: 16/9;
-    border-radius: var(--border-radius);
-  }
-}
-
-@media (max-width: 1200px) {
-  .mainpage {
-    .posts {
-      grid-template-columns: 1fr 1fr 1fr;
-    }
-  }
-}
-
-@media (max-width: 1000px) {
-  .mainpage {
-    .posts {
-      grid-template-columns: 1fr 1fr;
-    }
-  }
-}
-
-@media (max-width: 500px) {
-  .mainpage {
-    .posts {
-      display: flex;
-      flex-direction: column;
-    }
-  }
 }

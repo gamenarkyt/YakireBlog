@@ -5,6 +5,14 @@
   flex-direction: column;
   //   display: flex;
   //   flex-direction: column;
+
+  .testanim {
+    width: 200px;
+    height: 40px;
+
+    animation: var(--skeleton);
+  }
+
   .mainnews {
     width: 100%;
     height: 200px;
