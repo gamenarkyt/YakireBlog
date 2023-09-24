@@ -9,7 +9,7 @@ React + vite + ts
     - [x] Posts Component
     - [x] Roadmap Component
 
-- [ ] Add preview for compopnents
+- [x] Add preview for compopnents
 - [ ] Add sort component
 - [ ] Posts Page
   - [ ] Add filters
