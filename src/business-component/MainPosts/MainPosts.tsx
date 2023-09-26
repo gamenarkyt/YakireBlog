@@ -3,53 +3,32 @@ import { Card } from "../../components/ui/Card/Card";
 import { Heading } from "../../components/ui/Heading/Heading";
 import data from "@/data/data.json";
 import { useMatchMedia } from "../../hooks/useMatchMedia";
-import { useState } from "react";
+import { useCallback, useMemo, useState } from "react";
 
 import styles from "./MainPosts.module.scss";
+import { sortPosts } from "../../utils/sortPosts";
 
 const MainPosts = () => {
-  const [posts, setPosts] = useState(data);
+  const rawPosts = data;
+  let [sorttype, setsorttype] = useState("abs");
+  const posts = useMemo(
+    () => sortPosts(rawPosts, sorttype),
+    [rawPosts, sorttype]
+  );
+
   const { isMobile, isDesktop, isTablet } = useMatchMedia();
 
-  const sortNormal = () => {
-    setPosts(data);
-  };
-
   const sortByAbs = () => {
-    const next = [...posts];
-    next.sort((a, b) => {
-      if (a.title < b.title) {
-        return -1;
-      }
-      if (a.title > b.title) {
-        return 1;
-      }
-      return 0;
-    });
-
-    setPosts(next);
+    setsorttype("abs");
   };
-
   const sortByTag = () => {
-    const next = [...posts];
-    next.sort((a, b) => {
-      if (a.tags[0] < b.tags[0]) {
-        return -1;
-      }
-      if (a.tags[0] > b.tags[0]) {
-        return 1;
-      }
-      return 0;
-    });
-
-    setPosts(next);
+    setsorttype("tag");
   };
 
   return (
     <div>
       <Heading text="Posts">
         <span>Sort: </span>
-        <Button onClick={sortNormal}>normal</Button>
         <Button onClick={sortByAbs}>abs</Button>
         <Button onClick={sortByTag}>tag</Button>
       </Heading>

@@ -11,5 +11,5 @@ React + vite + ts
 
 - [x] Add preview for compopnents
 - [ ] Add sort component
-- [ ] Posts Page
+- [x] Posts Page
   - [ ] Add filters

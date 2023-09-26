@@ -7,7 +7,9 @@ import { Suspense, lazy } from "react";
 
 import { GlobalLayout } from "@/layouts/GlobalLayout/GlobalLayout";
 import { MainPage } from "@/pages/MainPage/MainPage";
+import { MainPostsPreview } from "../business-component/MainPosts/MainPosts.preview";
 const PostPage = lazy(() => import("@/pages/PostPage/PostPage"));
+const PostsPage = lazy(() => import("@/pages/PostsPage/PostsPage"));
 const TestPage = lazy(() => import("@/pages/TestPage/TestPage"));
 
 const Loading = <span>Loading...</span>;
@@ -21,6 +23,14 @@ export const router = createBrowserRouter(
         element={
           <Suspense fallback={Loading}>
             <PostPage />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/posts"
+        element={
+          <Suspense fallback={Loading}>
+            <PostsPage />
           </Suspense>
         }
       />

@@ -7,9 +7,10 @@ export const MainPostsPreview = () => {
 
   return (
     <div className={styles.posts}>
-      {posts.map((_) => {
+      {posts.map((post) => {
         return (
           <div
+            key={post.id}
             style={{
               height: "340px",
               border: "var(--border)",

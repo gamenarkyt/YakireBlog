@@ -14,5 +14,13 @@
     "about": "wallpapers for your arch",
     "tags": ["archlinux", "wallpapers"],
     "link": "/post/wallpapers"
+  },
+  {
+    "id": 3,
+    "image": "/assets/test.png",
+    "title": "Bbbbb",
+    "about": "wallpapers for your arch",
+    "tags": ["archlinux", "wallpapers"],
+    "link": "/post/wallpapers"
   }
 ]

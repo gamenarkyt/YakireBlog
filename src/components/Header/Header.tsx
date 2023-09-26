@@ -1,4 +1,4 @@
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import styles from "./Header.module.scss";
 
 const Header = () => {
@@ -13,7 +13,10 @@ const Header = () => {
       <span className={styles.logo} onClick={onClickLogoHandler}>
         YakireBlog
       </span>
-      <nav></nav>
+      <nav>
+        <Link to="/posts">Posts</Link>
+        <Link to="/test">Test</Link>
+      </nav>
     </div>
   );
 };
