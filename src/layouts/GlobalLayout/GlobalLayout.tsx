@@ -2,6 +2,7 @@ import { Outlet } from "react-router-dom";
 
 import { Header } from "@/components/Header/Header";
 import styles from "./GlobalLayout.module.scss";
+import { Footer } from "../../components/Footer/Footer";
 
 const GlobalLayout = () => {
   return (
@@ -11,6 +12,7 @@ const GlobalLayout = () => {
         {/* <SideBar /> */}
         <Outlet />
       </main>
+      <Footer />
     </div>
   );
 };
