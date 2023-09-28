@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "image": "/assets/1.png",
+    "name": "HTML, CSS, JavaScript",
+    "date": "05.10.2023"
+  },
+  {
+    "id": 2,
+    "image": "/assets/2.png",
+    "name": "React",
+    "date": "05.10.2023"
+  }
+]

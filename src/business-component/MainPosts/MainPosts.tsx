@@ -1,16 +1,16 @@
 import { Button } from "../../components/ui/Button/Button";
 import { Card } from "../../components/ui/Card/Card";
 import { Heading } from "../../components/ui/Heading/Heading";
-import data from "@/data/data.json";
+import data from "@/data/posts.json";
 import { useMatchMedia } from "../../hooks/useMatchMedia";
-import { useCallback, useMemo, useState } from "react";
+import { useMemo, useState } from "react";
 
 import styles from "./MainPosts.module.scss";
 import { sortPosts } from "../../utils/sortPosts";
 
 const MainPosts = () => {
   const rawPosts = data;
-  let [sorttype, setsorttype] = useState("abs");
+  let [sorttype, setsorttype] = useState<"abs" | "tag">("abs") || "";
   const posts = useMemo(
     () => sortPosts(rawPosts, sorttype),
     [rawPosts, sorttype]

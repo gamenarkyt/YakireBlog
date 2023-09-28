@@ -1,4 +1,4 @@
-import data from "@/data/data.json";
+import data from "@/data/posts.json";
 import { useState } from "react";
 import styles from "./MainPosts.module.scss";
 
