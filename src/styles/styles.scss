@@ -8,9 +8,12 @@
 
 body {
   color-scheme: dark;
-  --accent: #ff6962;
+  --accent: #ddbf98;
   // --accent: white;
-  --accent-05: #ff6a6278;
+  --accent-05: #b39b7c7d;
+  --accent-08: #ddbf982b;
+  --primary: #689d6a;
+  // --primary: #b24b0b;
 
   --background: #141414;
   --background-1: #181818;
@@ -21,6 +24,7 @@ body {
 
   --border-radius: 8px;
   --border: 1px solid #323234;
+  --border-accent: 1px solid var(--privary);
 
   --box-shadow: rgba(255, 105, 98, 0.15) 10px 12px 38px,
     rgba(0, 0, 0, 0.115) 0px 15px 12px;
@@ -32,7 +36,7 @@ body {
 
 ::selection {
   color: white;
-  background-color: var(--accent-05);
+  background-color: var(--primary);
 }
 
 @keyframes skeleton-loading {
