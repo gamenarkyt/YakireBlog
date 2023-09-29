@@ -6,7 +6,9 @@
   h2,
   h3 {
     margin: 10px 0;
-    color: var(--accent);
+  }
+  h1 {
+    color: var(--primary);
   }
 
   pre {
@@ -18,5 +20,17 @@
     background-color: var(--background-2);
     border: var(--border);
     border-radius: var(--border-radius);
+  }
+}
+
+@media (max-width: 500px) {
+  .postpage {
+    h1 {
+      font-size: 35px;
+    }
+
+    h2 {
+      font-size: 28px;
+    }
   }
 }
