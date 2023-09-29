@@ -10,5 +10,29 @@
     "image": "/assets/2.png",
     "name": "React",
     "date": "05.10.2023"
+  },
+  {
+    "id": 3,
+    "image": "/assets/test.webp",
+    "name": "Redux",
+    "date": "05.10.2023"
+  },
+  {
+    "id": 4,
+    "image": "/assets/archgirl.png",
+    "name": "React-router, Axios",
+    "date": "05.10.2023"
+  },
+  {
+    "id": 5,
+    "image": "/assets/tea.gif",
+    "name": "React Hook Form, React Query",
+    "date": "05.10.2023"
+  },
+  {
+    "id": 6,
+    "image": "/assets/tea.gif",
+    "name": "Next JS (13.4 not stable)",
+    "date": "05.10.2023"
   }
 ]
