@@ -30,5 +30,13 @@
     "about": "My ArchLinux Rice update to v2",
     "tags": ["archlinux"],
     "link": "/post/archlinux-v2-dots"
+  },
+  {
+    "id": 5,
+    "image": "/assets/test.png",
+    "title": "VSCode Config",
+    "about": "Keymaping, config and etc.",
+    "tags": ["vscode"],
+    "link": "/post/vscode-config"
   }
 ]
