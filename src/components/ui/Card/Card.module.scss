@@ -11,7 +11,7 @@
   border-radius: var(--border-radius);
   cursor: pointer;
   overflow: hidden;
-  transition: width 0.2s, height 0.2s, box-shadow 0.2s;
+  transition: border 0.15s;
 
   .cardimage {
     width: 100%;
@@ -52,5 +52,11 @@
       border: var(--border);
       border-radius: var(--border-radius);
     }
+  }
+}
+
+@media (hover: hover) {
+  .card:hover {
+    border: var(--border-primary);
   }
 }
