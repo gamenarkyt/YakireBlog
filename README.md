@@ -11,9 +11,14 @@ React + vite + ts
 
 - [x] Add preview for compopnents
 - [ ] Add sort component
+- [ ] Add sort function
 - [x] Posts Page
 
   - [ ] Add filters
 
 - [x] Post Page
+
   - [x] Fix font size for mobile
+
+- [ ] Add json for news
+- [ ] News Component with slider
