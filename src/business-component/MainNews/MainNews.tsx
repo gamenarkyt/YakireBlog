@@ -8,9 +8,7 @@ export const MainNews = () => {
     <div className={styles.mainnews}>
       <BigCard image="/assets/test.webp">
         <span>ArchLinux Dots update to v2!</span>
-        <Button
-          onClick={() => window.open("https://github.com/gamenarkyt/.dots")}
-        >
+        <Button onClick={() => window.open("/post/archlinux-v2-dots")}>
           Check
         </Button>
       </BigCard>
