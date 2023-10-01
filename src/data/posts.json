@@ -18,9 +18,17 @@
   {
     "id": 3,
     "image": "/assets/test.png",
-    "title": "Bbbbb",
-    "about": "wallpapers for your arch",
-    "tags": ["archlinux", "wallpapers"],
-    "link": "/post/wallpapers"
+    "title": "BlackArch Repo",
+    "about": "BlackArch Repo like KaliLinux",
+    "tags": ["archlinux"],
+    "link": "/post/blackarch-repo-setup"
+  },
+  {
+    "id": 4,
+    "image": "/assets/test.png",
+    "title": "ArchLinux Rice v2",
+    "about": "My ArchLinux Rice update to v2",
+    "tags": ["archlinux"],
+    "link": "/post/archlinux-v2-dots"
   }
 ]
