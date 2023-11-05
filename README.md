@@ -22,3 +22,6 @@ React + vite + ts
 
 - [ ] Add json for news
 - [ ] News Component with slider
+
+- [ ] Chnage post view logic (/posts and /posts/archlinux-dots)
+- [ ] Delete PostPage
