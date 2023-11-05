@@ -1,12 +1,14 @@
 import data from "@/data/posts.json";
 import { useState } from "react";
 import styles from "./MainPosts.module.scss";
+import { Heading } from "../../components/ui/Heading/Heading";
 
 export const MainPostsPreview = () => {
-  const [posts] = useState(data);
+  const [posts] = useState(data.slice(0, 4));
 
   return (
     <div className={styles.posts}>
+      <Heading text="Posts" />
       {posts.map((post) => {
         return (
           <div

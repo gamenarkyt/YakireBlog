@@ -2,7 +2,6 @@ import { Button } from "../../components/ui/Button/Button";
 import { Card } from "../../components/ui/Card/Card";
 import { Heading } from "../../components/ui/Heading/Heading";
 import data from "@/data/posts.json";
-import { useMatchMedia } from "../../hooks/useMatchMedia";
 import { useMemo, useState } from "react";
 
 import styles from "./MainPosts.module.scss";
@@ -15,8 +14,6 @@ const MainPosts = () => {
     () => sortPosts(rawPosts, sorttype),
     [rawPosts, sorttype]
   );
-
-  const { isMobile, isDesktop, isTablet } = useMatchMedia();
 
   const sortByAbs = () => {
     setsorttype("abs");
@@ -34,21 +31,8 @@ const MainPosts = () => {
       </Heading>
       <div className={styles.posts}>
         {posts.map((post, index) => {
-          if (isMobile) {
-            if (index >= 4) {
-              return null;
-            }
-          }
-          if (isDesktop) {
-            if (index >= 8) {
-              return null;
-            }
-          }
-
-          if (isTablet) {
-            if (index >= 6) {
-              return null;
-            }
+          if (index >= 4) {
+            return null;
           }
 
           return (
