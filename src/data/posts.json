@@ -38,5 +38,13 @@
     "about": "Keymaping, config and etc.",
     "tags": ["vscode"],
     "link": "/post/vscode-config"
+  },
+  {
+    "id": 6,
+    "image": "/assets/test.png",
+    "title": "Repair grub",
+    "about": "Repair gtub from windows and reconfigure grub",
+    "tags": ["archlinux", "windows"],
+    "link": "/post/repair-grub"
   }
 ]
